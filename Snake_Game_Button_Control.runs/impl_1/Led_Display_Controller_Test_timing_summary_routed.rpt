@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Sat Oct  5 12:53:33 2024
+| Date         : Mon Oct  7 13:55:35 2024
 | Host         : Rohan-PC running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Led_Display_Controller_Test_timing_summary_routed.rpt -pb Led_Display_Controller_Test_timing_summary_routed.pb -rpx Led_Display_Controller_Test_timing_summary_routed.rpx -warn_on_violation
 | Design       : Led_Display_Controller_Test
@@ -43,7 +43,7 @@ Timing Summary Report
 
 Rule       Severity          Description                  Violations  
 ---------  ----------------  ---------------------------  ----------  
-TIMING-17  Critical Warning  Non-clocked sequential cell  143         
+TIMING-17  Critical Warning  Non-clocked sequential cell  356         
 
 Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
 
@@ -53,10 +53,10 @@ check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock (143)
+1. checking no_clock (356)
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
-4. checking unconstrained_internal_endpoints (326)
+4. checking unconstrained_internal_endpoints (750)
 5. checking no_input_delay (5)
 6. checking no_output_delay (11)
 7. checking multiple_clock (0)
@@ -66,11 +66,11 @@ Table of Contents
 11. checking partial_output_delay (0)
 12. checking latch_loops (0)
 
-1. checking no_clock (143)
+1. checking no_clock (356)
 --------------------------
  There are 36 register/latch pins with no clock driven by root clock pin: clock_100Mhz (HIGH)
 
- There are 77 register/latch pins with no clock driven by root clock pin: clock1s/clock_temp_reg/Q (HIGH)
+ There are 290 register/latch pins with no clock driven by root clock pin: clock1s/clock_temp_reg/Q (HIGH)
 
  There are 30 register/latch pins with no clock driven by root clock pin: clock_3/clock_temp_reg/Q (HIGH)
 
@@ -85,9 +85,9 @@ Table of Contents
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints (326)
+4. checking unconstrained_internal_endpoints (750)
 --------------------------------------------------
- There are 326 pins that are not constrained for maximum delay. (HIGH)
+ There are 750 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -146,7 +146,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-        inf        0.000                      0                  337          inf        0.000                      0                  337           NA           NA                      NA                    NA  
+        inf        0.000                      0                  761          inf        0.000                      0                  761           NA           NA                      NA                    NA  
 
 
 There are no user specified timing constraints.
@@ -215,327 +215,323 @@ Path Group:  (none)
 From Clock:  
   To Clock:  
 
-Max Delay           337 Endpoints
-Min Delay           337 Endpoints
+Max Delay           761 Endpoints
+Min Delay           761 Endpoints
 --------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_g_reg[0]_lopt_replica/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_g_reg[3]_lopt_replica_2/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        11.439ns  (logic 2.296ns (20.072%)  route 9.143ns (79.928%))
-  Logic Levels:           9  (CARRY4=3 FDPE=1 LUT4=3 LUT5=1 LUT6=1)
+  Data Path Delay:        14.508ns  (logic 1.706ns (11.759%)  route 12.802ns (88.241%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 r  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.120     6.349    control1/CO[0]
-    SLICE_X6Y99          LUT4 (Prop_lut4_I0_O)        0.124     6.473 f  control1/vga_g[0]_i_2/O
-                         net (fo=1, routed)           0.670     7.143    snake_display/vga_g_reg[0]_0
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     7.267 r  snake_display/vga_g[0]_i_1/O
-                         net (fo=4, routed)           4.172    11.439    snake_display/vga_g[0]_i_1_n_0
-    SLICE_X88Y144        FDCE                                         r  snake_display/vga_g_reg[0]_lopt_replica/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 r  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 r  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 f  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.333     9.532    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.656 r  control1/vga_g[3]_i_1/O
+                         net (fo=4, routed)           4.853    14.508    snake_display/vga_g_reg[3]_0
+    SLICE_X88Y133        FDCE                                         r  snake_display/vga_g_reg[3]_lopt_replica_2/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_g_reg[0]/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_g_reg[3]_lopt_replica_3/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        11.296ns  (logic 2.296ns (20.326%)  route 9.000ns (79.674%))
-  Logic Levels:           9  (CARRY4=3 FDPE=1 LUT4=3 LUT5=1 LUT6=1)
+  Data Path Delay:        14.508ns  (logic 1.706ns (11.759%)  route 12.802ns (88.241%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 r  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.120     6.349    control1/CO[0]
-    SLICE_X6Y99          LUT4 (Prop_lut4_I0_O)        0.124     6.473 f  control1/vga_g[0]_i_2/O
-                         net (fo=1, routed)           0.670     7.143    snake_display/vga_g_reg[0]_0
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     7.267 r  snake_display/vga_g[0]_i_1/O
-                         net (fo=4, routed)           4.029    11.296    snake_display/vga_g[0]_i_1_n_0
-    SLICE_X88Y143        FDCE                                         r  snake_display/vga_g_reg[0]/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 r  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 r  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 f  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.333     9.532    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.656 r  control1/vga_g[3]_i_1/O
+                         net (fo=4, routed)           4.853    14.508    snake_display/vga_g_reg[3]_0
+    SLICE_X88Y133        FDCE                                         r  snake_display/vga_g_reg[3]_lopt_replica_3/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_g_reg[0]_lopt_replica_3/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_r_reg[3]_lopt_replica_3/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        11.256ns  (logic 2.296ns (20.397%)  route 8.960ns (79.603%))
-  Logic Levels:           9  (CARRY4=3 FDPE=1 LUT4=3 LUT5=1 LUT6=1)
+  Data Path Delay:        14.494ns  (logic 1.706ns (11.770%)  route 12.788ns (88.230%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 r  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.120     6.349    control1/CO[0]
-    SLICE_X6Y99          LUT4 (Prop_lut4_I0_O)        0.124     6.473 f  control1/vga_g[0]_i_2/O
-                         net (fo=1, routed)           0.670     7.143    snake_display/vga_g_reg[0]_0
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     7.267 r  snake_display/vga_g[0]_i_1/O
-                         net (fo=4, routed)           3.990    11.256    snake_display/vga_g[0]_i_1_n_0
-    SLICE_X88Y144        FDCE                                         r  snake_display/vga_g_reg[0]_lopt_replica_3/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 f  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 f  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 r  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.323     9.522    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.646 r  control1/vga_r[3]_i_2/O
+                         net (fo=4, routed)           4.848    14.494    snake_display/vga_r_reg[3]_0
+    SLICE_X89Y133        FDCE                                         r  snake_display/vga_r_reg[3]_lopt_replica_3/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_g_reg[0]_lopt_replica_2/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_g_reg[3]_lopt_replica/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        11.107ns  (logic 2.296ns (20.672%)  route 8.811ns (79.328%))
-  Logic Levels:           9  (CARRY4=3 FDPE=1 LUT4=3 LUT5=1 LUT6=1)
+  Data Path Delay:        14.313ns  (logic 1.706ns (11.919%)  route 12.607ns (88.081%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 r  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.120     6.349    control1/CO[0]
-    SLICE_X6Y99          LUT4 (Prop_lut4_I0_O)        0.124     6.473 f  control1/vga_g[0]_i_2/O
-                         net (fo=1, routed)           0.670     7.143    snake_display/vga_g_reg[0]_0
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     7.267 r  snake_display/vga_g[0]_i_1/O
-                         net (fo=4, routed)           3.840    11.107    snake_display/vga_g[0]_i_1_n_0
-    SLICE_X88Y143        FDCE                                         r  snake_display/vga_g_reg[0]_lopt_replica_2/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 r  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 r  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 f  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.333     9.532    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.656 r  control1/vga_g[3]_i_1/O
+                         net (fo=4, routed)           4.657    14.313    snake_display/vga_g_reg[3]_0
+    SLICE_X88Y133        FDCE                                         r  snake_display/vga_g_reg[3]_lopt_replica/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_r_reg[0]_lopt_replica_3/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_r_reg[3]_lopt_replica_2/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        10.641ns  (logic 2.172ns (20.411%)  route 8.469ns (79.589%))
-  Logic Levels:           8  (CARRY4=3 FDPE=1 LUT4=2 LUT5=1 LUT6=1)
+  Data Path Delay:        14.305ns  (logic 1.706ns (11.926%)  route 12.599ns (88.074%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 f  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.125     6.354    control1/CO[0]
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     6.478 r  control1/vga_r[0]_i_1/O
-                         net (fo=4, routed)           4.163    10.641    snake_display/vga_r_reg[0]_0
-    SLICE_X88Y135        FDCE                                         r  snake_display/vga_r_reg[0]_lopt_replica_3/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 f  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 f  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 r  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.323     9.522    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.646 r  control1/vga_r[3]_i_2/O
+                         net (fo=4, routed)           4.659    14.305    snake_display/vga_r_reg[3]_0
+    SLICE_X89Y133        FDCE                                         r  snake_display/vga_r_reg[3]_lopt_replica_2/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_r_reg[0]_lopt_replica_2/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_r_reg[3]_lopt_replica/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        10.452ns  (logic 2.172ns (20.781%)  route 8.280ns (79.219%))
-  Logic Levels:           8  (CARRY4=3 FDPE=1 LUT4=2 LUT5=1 LUT6=1)
+  Data Path Delay:        14.116ns  (logic 1.706ns (12.086%)  route 12.410ns (87.914%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 f  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.125     6.354    control1/CO[0]
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     6.478 r  control1/vga_r[0]_i_1/O
-                         net (fo=4, routed)           3.974    10.452    snake_display/vga_r_reg[0]_0
-    SLICE_X88Y135        FDCE                                         r  snake_display/vga_r_reg[0]_lopt_replica_2/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 f  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 f  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 r  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.323     9.522    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.646 r  control1/vga_r[3]_i_2/O
+                         net (fo=4, routed)           4.470    14.116    snake_display/vga_r_reg[3]_0
+    SLICE_X89Y133        FDCE                                         r  snake_display/vga_r_reg[3]_lopt_replica/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_r_reg[0]_lopt_replica/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_r_reg[3]/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        10.358ns  (logic 2.172ns (20.968%)  route 8.186ns (79.032%))
-  Logic Levels:           8  (CARRY4=3 FDPE=1 LUT4=2 LUT5=1 LUT6=1)
+  Data Path Delay:        14.114ns  (logic 1.706ns (12.088%)  route 12.408ns (87.912%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 f  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.125     6.354    control1/CO[0]
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     6.478 r  control1/vga_r[0]_i_1/O
-                         net (fo=4, routed)           3.880    10.358    snake_display/vga_r_reg[0]_0
-    SLICE_X88Y133        FDCE                                         r  snake_display/vga_r_reg[0]_lopt_replica/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 f  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 f  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 r  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.323     9.522    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.646 r  control1/vga_r[3]_i_2/O
+                         net (fo=4, routed)           4.468    14.114    snake_display/vga_r_reg[3]_0
+    SLICE_X89Y133        FDCE                                         r  snake_display/vga_r_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 control1/pos_y_temp_reg[4]/C
-                            (rising edge-triggered cell FDPE)
-  Destination:            snake_display/vga_r_reg[0]/D
+  Source:                 snake_display/v_counter_reg[9]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            snake_display/vga_g_reg[3]/D
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        10.169ns  (logic 2.172ns (21.359%)  route 7.997ns (78.641%))
-  Logic Levels:           8  (CARRY4=3 FDPE=1 LUT4=2 LUT5=1 LUT6=1)
+  Data Path Delay:        14.113ns  (logic 1.706ns (12.088%)  route 12.407ns (87.912%))
+  Logic Levels:           8  (CARRY4=3 FDCE=1 LUT4=1 LUT5=1 LUT6=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X1Y93          FDPE                         0.000     0.000 r  control1/pos_y_temp_reg[4]/C
-    SLICE_X1Y93          FDPE (Prop_fdpe_C_Q)         0.456     0.456 r  control1/pos_y_temp_reg[4]/Q
-                         net (fo=13, routed)          1.157     1.613    control1/pos_y[4]
-    SLICE_X5Y95          LUT5 (Prop_lut5_I4_O)        0.152     1.765 r  control1/vga_r2_carry_i_9/O
-                         net (fo=15, routed)          1.199     2.964    control1/vga_r2_carry_i_9_n_0
-    SLICE_X3Y96          LUT4 (Prop_lut4_I0_O)        0.354     3.318 r  control1/vga_r2_carry__0_i_7/O
-                         net (fo=2, routed)           0.825     4.143    control1/pos_y_temp_reg[6]_2
-    SLICE_X4Y96          LUT4 (Prop_lut4_I0_O)        0.326     4.469 r  control1/vga_r2_carry__0_i_5/O
-                         net (fo=1, routed)           0.000     4.469    snake_display/vga_r2_carry__1_0[0]
-    SLICE_X4Y96          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.532     5.001 r  snake_display/vga_r2_carry__0/CO[3]
-                         net (fo=1, routed)           0.000     5.001    snake_display/vga_r2_carry__0_n_0
-    SLICE_X4Y97          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.115 r  snake_display/vga_r2_carry__1/CO[3]
-                         net (fo=1, routed)           0.000     5.115    snake_display/vga_r2_carry__1_n_0
-    SLICE_X4Y98          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     5.229 f  snake_display/vga_r2_carry__2/CO[3]
-                         net (fo=2, routed)           1.125     6.354    control1/CO[0]
-    SLICE_X6Y99          LUT6 (Prop_lut6_I0_O)        0.124     6.478 r  control1/vga_r[0]_i_1/O
-                         net (fo=4, routed)           3.691    10.169    snake_display/vga_r_reg[0]_0
-    SLICE_X88Y133        FDCE                                         r  snake_display/vga_r_reg[0]/D
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[9]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.456     0.456 r  snake_display/v_counter_reg[9]/Q
+                         net (fo=48, routed)          3.965     4.421    control1/vga_r_reg[3]_i_485_0[9]
+    SLICE_X2Y69          LUT6 (Prop_lut6_I0_O)        0.124     4.545 r  control1/vga_r[3]_i_821/O
+                         net (fo=1, routed)           0.568     5.113    control1/vga_r[3]_i_821_n_0
+    SLICE_X3Y69          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526     5.639 r  control1/vga_r_reg[3]_i_623/CO[3]
+                         net (fo=1, routed)           0.000     5.639    control1/vga_r_reg[3]_i_623_n_0
+    SLICE_X3Y70          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.753 r  control1/vga_r_reg[3]_i_364/CO[3]
+                         net (fo=1, routed)           0.000     5.753    control1/vga_r_reg[3]_i_364_n_0
+    SLICE_X3Y71          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     5.867 r  control1/vga_r_reg[3]_i_132/CO[3]
+                         net (fo=1, routed)           1.094     6.961    control1/snake_display/vga_r45_in
+    SLICE_X5Y65          LUT4 (Prop_lut4_I2_O)        0.124     7.085 r  control1/vga_r[3]_i_28/O
+                         net (fo=1, routed)           0.990     8.075    control1/vga_r[3]_i_28_n_0
+    SLICE_X6Y57          LUT5 (Prop_lut5_I4_O)        0.124     8.199 f  control1/vga_r[3]_i_6/O
+                         net (fo=2, routed)           1.333     9.532    control1/vga_r[3]_i_6_n_0
+    SLICE_X8Y66          LUT6 (Prop_lut6_I3_O)        0.124     9.656 r  control1/vga_g[3]_i_1/O
+                         net (fo=4, routed)           4.457    14.113    snake_display/vga_g_reg[3]_0
+    SLICE_X88Y133        FDCE                                         r  snake_display/vga_g_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 reset
                             (input port)
-  Destination:            snake_display/vga_g_reg[0]_lopt_replica/CLR
+  Destination:            snake_display/vga_r_reg[3]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        10.107ns  (logic 1.477ns (14.609%)  route 8.631ns (85.391%))
-  Logic Levels:           1  (IBUF=1)
+  Data Path Delay:        13.846ns  (logic 1.601ns (11.560%)  route 12.245ns (88.440%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
     N17                                               0.000     0.000 f  reset (IN)
                          net (fo=0)                   0.000     0.000    reset
     N17                  IBUF (Prop_ibuf_I_O)         1.477     1.477 f  reset_IBUF_inst/O
-                         net (fo=143, routed)         8.631    10.107    snake_display/reset_IBUF
-    SLICE_X88Y144        FDCE                                         f  snake_display/vga_g_reg[0]_lopt_replica/CLR
+                         net (fo=375, routed)        11.657    13.133    snake_display/reset_IBUF
+    SLICE_X88Y133        LUT1 (Prop_lut1_I0_O)        0.124    13.257 r  snake_display/vga_r[3]_i_1/O
+                         net (fo=8, routed)           0.588    13.846    snake_display/p_0_out[0]
+    SLICE_X89Y133        FDCE                                         r  snake_display/vga_r_reg[3]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 reset
                             (input port)
-  Destination:            snake_display/vga_g_reg[0]_lopt_replica_3/CLR
+  Destination:            snake_display/vga_r_reg[3]_lopt_replica/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        10.107ns  (logic 1.477ns (14.609%)  route 8.631ns (85.391%))
-  Logic Levels:           1  (IBUF=1)
+  Data Path Delay:        13.846ns  (logic 1.601ns (11.560%)  route 12.245ns (88.440%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
     N17                                               0.000     0.000 f  reset (IN)
                          net (fo=0)                   0.000     0.000    reset
     N17                  IBUF (Prop_ibuf_I_O)         1.477     1.477 f  reset_IBUF_inst/O
-                         net (fo=143, routed)         8.631    10.107    snake_display/reset_IBUF
-    SLICE_X88Y144        FDCE                                         f  snake_display/vga_g_reg[0]_lopt_replica_3/CLR
+                         net (fo=375, routed)        11.657    13.133    snake_display/reset_IBUF
+    SLICE_X88Y133        LUT1 (Prop_lut1_I0_O)        0.124    13.257 r  snake_display/vga_r[3]_i_1/O
+                         net (fo=8, routed)           0.588    13.846    snake_display/p_0_out[0]
+    SLICE_X89Y133        FDCE                                         r  snake_display/vga_r_reg[3]_lopt_replica/CE
   -------------------------------------------------------------------    -------------------
 
 
@@ -545,191 +541,175 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 apple_eaten_reg/C
+  Source:                 control1/pos_y_body_reg[64]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            curr_apple_y_reg[3]/CE
+  Destination:            control1/pos_y_body_reg[74]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.269ns  (logic 0.141ns (52.481%)  route 0.128ns (47.519%))
+  Data Path Delay:        0.261ns  (logic 0.141ns (53.979%)  route 0.120ns (46.021%))
   Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y102         FDCE                         0.000     0.000 r  apple_eaten_reg/C
-    SLICE_X3Y102         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  apple_eaten_reg/Q
-                         net (fo=13, routed)          0.128     0.269    apple_eaten
-    SLICE_X4Y102         FDPE                                         r  curr_apple_y_reg[3]/CE
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  control1/pos_y_body_reg[64]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  control1/pos_y_body_reg[64]/Q
+                         net (fo=9, routed)           0.120     0.261    control1/pos_y_body_reg_n_0_[64]
+    SLICE_X2Y67          FDCE                                         r  control1/pos_y_body_reg[74]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 snake_display/h_counter_reg[8]/C
+  Source:                 control1/pos_y_body_reg[66]/C
                             (rising edge-triggered cell FDCE)
-  Destination:            snake_display/h_counter_reg[9]/D
+  Destination:            control1/pos_y_body_reg[76]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.286ns  (logic 0.186ns (64.937%)  route 0.100ns (35.063%))
-  Logic Levels:           2  (FDCE=1 LUT6=1)
+  Data Path Delay:        0.265ns  (logic 0.141ns (53.299%)  route 0.124ns (46.701%))
+  Logic Levels:           1  (FDCE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X4Y99          FDCE                         0.000     0.000 r  snake_display/h_counter_reg[8]/C
-    SLICE_X4Y99          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  snake_display/h_counter_reg[8]/Q
-                         net (fo=14, routed)          0.100     0.241    snake_display/h_counter_reg[9]_0[8]
-    SLICE_X5Y99          LUT6 (Prop_lut6_I1_O)        0.045     0.286 r  snake_display/h_counter[9]_i_1/O
-                         net (fo=1, routed)           0.000     0.286    snake_display/h_counter[9]
-    SLICE_X5Y99          FDCE                                         r  snake_display/h_counter_reg[9]/D
+    SLICE_X1Y66          FDCE                         0.000     0.000 r  control1/pos_y_body_reg[66]/C
+    SLICE_X1Y66          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  control1/pos_y_body_reg[66]/Q
+                         net (fo=7, routed)           0.124     0.265    control1/pos_y_body_reg_n_0_[66]
+    SLICE_X2Y67          FDCE                                         r  control1/pos_y_body_reg[76]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 clock_3/counter_reg[1]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            clock_3/counter_reg[0]/D
+  Source:                 control1/pos_y_body_reg[45]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            control1/pos_y_body_reg[55]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.304ns  (logic 0.227ns (74.785%)  route 0.077ns (25.215%))
+  Data Path Delay:        0.265ns  (logic 0.141ns (53.180%)  route 0.124ns (46.820%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y62          FDCE                         0.000     0.000 r  control1/pos_y_body_reg[45]/C
+    SLICE_X1Y62          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  control1/pos_y_body_reg[45]/Q
+                         net (fo=9, routed)           0.124     0.265    control1/pos_y_body_reg_n_0_[45]
+    SLICE_X1Y63          FDCE                                         r  control1/pos_y_body_reg[55]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 random1/pos_x_rand_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            curr_apple_x_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.266ns  (logic 0.167ns (62.725%)  route 0.099ns (37.275%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y53         FDRE                         0.000     0.000 r  random1/pos_x_rand_reg[6]/C
+    SLICE_X14Y53         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  random1/pos_x_rand_reg[6]/Q
+                         net (fo=1, routed)           0.099     0.266    pos_x_rand[6]
+    SLICE_X13Y53         FDCE                                         r  curr_apple_x_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 control1/pos_y_body_reg[70]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            control1/pos_y_body_reg[80]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.272ns  (logic 0.141ns (51.789%)  route 0.131ns (48.211%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y67          FDCE                         0.000     0.000 r  control1/pos_y_body_reg[70]/C
+    SLICE_X3Y67          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  control1/pos_y_body_reg[70]/Q
+                         net (fo=5, routed)           0.131     0.272    control1/pos_y_body_reg[81]_0[14]
+    SLICE_X4Y68          FDCE                                         r  control1/pos_y_body_reg[80]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 random1/pos_x_rand_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            curr_apple_x_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.277ns  (logic 0.167ns (60.288%)  route 0.110ns (39.712%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y52         FDRE                         0.000     0.000 r  random1/pos_x_rand_reg[5]/C
+    SLICE_X12Y52         FDRE (Prop_fdre_C_Q)         0.167     0.167 r  random1/pos_x_rand_reg[5]/Q
+                         net (fo=1, routed)           0.110     0.277    pos_x_rand[5]
+    SLICE_X12Y51         FDCE                                         r  curr_apple_x_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 control1/pos_y_body_reg[44]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            control1/pos_y_body_reg[54]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.277ns  (logic 0.141ns (50.841%)  route 0.136ns (49.159%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y62          FDCE                         0.000     0.000 r  control1/pos_y_body_reg[44]/C
+    SLICE_X1Y62          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  control1/pos_y_body_reg[44]/Q
+                         net (fo=9, routed)           0.136     0.277    control1/pos_y_body_reg_n_0_[44]
+    SLICE_X1Y63          FDCE                                         r  control1/pos_y_body_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 random1/pos_x_rand_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            curr_apple_x_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.280ns  (logic 0.146ns (52.149%)  route 0.134ns (47.851%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y52         FDRE                         0.000     0.000 r  random1/pos_x_rand_reg[1]/C
+    SLICE_X13Y52         FDRE (Prop_fdre_C_Q)         0.146     0.146 r  random1/pos_x_rand_reg[1]/Q
+                         net (fo=1, routed)           0.134     0.280    pos_x_rand[1]
+    SLICE_X11Y52         FDCE                                         r  curr_apple_x_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 control1/pos_y_body_reg[8]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            control1/pos_y_body_reg[18]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.285ns  (logic 0.141ns (49.437%)  route 0.144ns (50.563%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y54          FDCE                         0.000     0.000 r  control1/pos_y_body_reg[8]/C
+    SLICE_X1Y54          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  control1/pos_y_body_reg[8]/Q
+                         net (fo=18, routed)          0.144     0.285    control1/pos_y_body_reg_n_0_[8]
+    SLICE_X1Y55          FDCE                                         r  control1/pos_y_body_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clock_3/counter_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clock_3/counter_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.302ns  (logic 0.227ns (75.183%)  route 0.075ns (24.817%))
   Logic Levels:           2  (FDRE=1 LUT3=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X52Y96         FDRE                         0.000     0.000 r  clock_3/counter_reg[1]/C
-    SLICE_X52Y96         FDRE (Prop_fdre_C_Q)         0.128     0.128 f  clock_3/counter_reg[1]/Q
-                         net (fo=3, routed)           0.077     0.205    clock_3/p_0_in
-    SLICE_X52Y96         LUT3 (Prop_lut3_I2_O)        0.099     0.304 r  clock_3/counter[0]_i_1/O
-                         net (fo=1, routed)           0.000     0.304    clock_3/counter[0]_i_1_n_0
-    SLICE_X52Y96         FDRE                                         r  clock_3/counter_reg[0]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 snake_display/v_counter_reg[6]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            snake_display/v_counter_reg[7]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.344ns  (logic 0.186ns (54.011%)  route 0.158ns (45.989%))
-  Logic Levels:           2  (FDCE=1 LUT6=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y94          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[6]/C
-    SLICE_X5Y94          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  snake_display/v_counter_reg[6]/Q
-                         net (fo=13, routed)          0.158     0.299    snake_display/Q[6]
-    SLICE_X4Y94          LUT6 (Prop_lut6_I2_O)        0.045     0.344 r  snake_display/v_counter[7]_i_1/O
-                         net (fo=1, routed)           0.000     0.344    snake_display/v_counter[7]_i_1_n_0
-    SLICE_X4Y94          FDCE                                         r  snake_display/v_counter_reg[7]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 snake_display/v_counter_reg[4]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            snake_display/v_counter_reg[9]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.350ns  (logic 0.186ns (53.178%)  route 0.164ns (46.822%))
-  Logic Levels:           2  (FDCE=1 LUT5=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X5Y94          FDCE                         0.000     0.000 r  snake_display/v_counter_reg[4]/C
-    SLICE_X5Y94          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  snake_display/v_counter_reg[4]/Q
-                         net (fo=16, routed)          0.164     0.305    snake_display/Q[4]
-    SLICE_X4Y94          LUT5 (Prop_lut5_I2_O)        0.045     0.350 r  snake_display/v_counter[9]_i_2/O
-                         net (fo=1, routed)           0.000     0.350    snake_display/v_counter[9]_i_2_n_0
-    SLICE_X4Y94          FDCE                                         r  snake_display/v_counter_reg[9]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 clock1s/counter_reg[0]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            clock1s/counter_reg[1]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.351ns  (logic 0.183ns (52.101%)  route 0.168ns (47.899%))
-  Logic Levels:           2  (FDRE=1 LUT3=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X49Y92         FDRE                         0.000     0.000 r  clock1s/counter_reg[0]/C
-    SLICE_X49Y92         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clock1s/counter_reg[0]/Q
-                         net (fo=34, routed)          0.168     0.309    clock1s/counter_reg_n_0_[0]
-    SLICE_X49Y92         LUT3 (Prop_lut3_I0_O)        0.042     0.351 r  clock1s/counter[1]_i_1/O
-                         net (fo=1, routed)           0.000     0.351    clock1s/counter[1]_i_1_n_0
-    SLICE_X49Y92         FDRE                                         r  clock1s/counter_reg[1]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 clock1s/counter_reg[0]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            clock1s/counter_reg[4]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.352ns  (logic 0.186ns (52.838%)  route 0.166ns (47.162%))
-  Logic Levels:           2  (FDRE=1 LUT3=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X49Y92         FDRE                         0.000     0.000 r  clock1s/counter_reg[0]/C
-    SLICE_X49Y92         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clock1s/counter_reg[0]/Q
-                         net (fo=34, routed)          0.166     0.307    clock1s/counter_reg_n_0_[0]
-    SLICE_X49Y92         LUT3 (Prop_lut3_I0_O)        0.045     0.352 r  clock1s/counter[4]_i_1/O
-                         net (fo=1, routed)           0.000     0.352    clock1s/counter[4]_i_1_n_0
-    SLICE_X49Y92         FDRE                                         r  clock1s/counter_reg[4]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 clock1s/counter_reg[0]/C
-                            (rising edge-triggered cell FDRE)
-  Destination:            clock1s/counter_reg[0]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
-  Logic Levels:           2  (FDRE=1 LUT2=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X49Y92         FDRE                         0.000     0.000 r  clock1s/counter_reg[0]/C
-    SLICE_X49Y92         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  clock1s/counter_reg[0]/Q
-                         net (fo=34, routed)          0.168     0.309    clock1s/counter_reg_n_0_[0]
-    SLICE_X49Y92         LUT2 (Prop_lut2_I1_O)        0.045     0.354 r  clock1s/counter[0]_i_1/O
-                         net (fo=1, routed)           0.000     0.354    clock1s/counter[0]_i_1_n_0
-    SLICE_X49Y92         FDRE                                         r  clock1s/counter_reg[0]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 control1/last_vel_x_reg[6]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            control1/last_vel_x_reg[6]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
-  Logic Levels:           2  (FDCE=1 LUT5=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X1Y91          FDCE                         0.000     0.000 r  control1/last_vel_x_reg[6]/C
-    SLICE_X1Y91          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  control1/last_vel_x_reg[6]/Q
-                         net (fo=2, routed)           0.168     0.309    control1/last_vel_x[6]
-    SLICE_X1Y91          LUT5 (Prop_lut5_I0_O)        0.045     0.354 r  control1/last_vel_x[6]_i_1/O
-                         net (fo=1, routed)           0.000     0.354    control1/vel_x[6]
-    SLICE_X1Y91          FDCE                                         r  control1/last_vel_x_reg[6]/D
-  -------------------------------------------------------------------    -------------------
-
-Slack:                    inf
-  Source:                 control1/last_vel_x_reg[0]/C
-                            (rising edge-triggered cell FDCE)
-  Destination:            control1/last_vel_x_reg[0]/D
-  Path Group:             (none)
-  Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.357ns  (logic 0.209ns (58.509%)  route 0.148ns (41.491%))
-  Logic Levels:           2  (FDCE=1 LUT5=1)
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-    SLICE_X2Y90          FDCE                         0.000     0.000 r  control1/last_vel_x_reg[0]/C
-    SLICE_X2Y90          FDCE (Prop_fdce_C_Q)         0.164     0.164 r  control1/last_vel_x_reg[0]/Q
-                         net (fo=2, routed)           0.148     0.312    control1/last_vel_x[0]
-    SLICE_X2Y90          LUT5 (Prop_lut5_I3_O)        0.045     0.357 r  control1/last_vel_x[0]_i_1/O
-                         net (fo=1, routed)           0.000     0.357    control1/vel_x[0]
-    SLICE_X2Y90          FDCE                                         r  control1/last_vel_x_reg[0]/D
+    SLICE_X52Y96         FDRE                         0.000     0.000 r  clock_3/counter_reg[0]/C
+    SLICE_X52Y96         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  clock_3/counter_reg[0]/Q
+                         net (fo=2, routed)           0.075     0.203    clock_3/counter_reg_n_0_[0]
+    SLICE_X52Y96         LUT3 (Prop_lut3_I0_O)        0.099     0.302 r  clock_3/counter[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.302    clock_3/counter[1]_i_1_n_0
+    SLICE_X52Y96         FDRE                                         r  clock_3/counter_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 

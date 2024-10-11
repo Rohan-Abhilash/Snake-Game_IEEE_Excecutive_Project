@@ -1,70 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1728112902">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1728289413">
   <File Type="ROUTE-PWR" Name="Led_Display_Controller_Test_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Led_Display_Controller_Test.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="Led_Display_Controller_Test_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Led_Display_Controller_Test_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="Led_Display_Controller_Test_rqa_opted.pb"/>
+  <File Type="BITSTR-MSK" Name="Led_Display_Controller_Test.msk"/>
+  <File Type="ROUTE-CLK" Name="Led_Display_Controller_Test_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Led_Display_Controller_Test.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Led_Display_Controller_Test_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Led_Display_Controller_Test.bit"/>
+  <File Type="BG-DRC" Name="Led_Display_Controller_Test.drc"/>
+  <File Type="BG-BGN" Name="Led_Display_Controller_Test.bgn"/>
+  <File Type="BG-BIN" Name="Led_Display_Controller_Test.bin"/>
+  <File Type="BITSTR-RBT" Name="Led_Display_Controller_Test.rbt"/>
+  <File Type="BITSTR-NKY" Name="Led_Display_Controller_Test.nky"/>
+  <File Type="BITSTR-BMM" Name="Led_Display_Controller_Test_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="Led_Display_Controller_Test.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Led_Display_Controller_Test_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Led_Display_Controller_Test_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="Led_Display_Controller_Test_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Led_Display_Controller_Test_opt.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Led_Display_Controller_Test_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="Led_Display_Controller_Test.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Led_Display_Controller_Test.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="Led_Display_Controller_Test_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Led_Display_Controller_Test.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Led_Display_Controller_Test_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Led_Display_Controller_Test_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Led_Display_Controller_Test_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="Led_Display_Controller_Test_placed.dcp"/>
   <File Type="PLACE-IO" Name="Led_Display_Controller_Test_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Led_Display_Controller_Test_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Led_Display_Controller_Test_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Led_Display_Controller_Test_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Led_Display_Controller_Test_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Led_Display_Controller_Test_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Led_Display_Controller_Test_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="Led_Display_Controller_Test.bin"/>
-  <File Type="PLACE-TIMING" Name="Led_Display_Controller_Test_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="Led_Display_Controller_Test_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="Led_Display_Controller_Test_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Led_Display_Controller_Test_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="Led_Display_Controller_Test.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Led_Display_Controller_Test_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Led_Display_Controller_Test_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Led_Display_Controller_Test_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="Led_Display_Controller_Test.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="Led_Display_Controller_Test_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Led_Display_Controller_Test_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Led_Display_Controller_Test_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Led_Display_Controller_Test_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Led_Display_Controller_Test_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Led_Display_Controller_Test_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Led_Display_Controller_Test_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Led_Display_Controller_Test_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Led_Display_Controller_Test_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Led_Display_Controller_Test_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="Led_Display_Controller_Test_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Led_Display_Controller_Test_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Led_Display_Controller_Test_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Led_Display_Controller_Test_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Led_Display_Controller_Test_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Led_Display_Controller_Test_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Led_Display_Controller_Test_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Led_Display_Controller_Test_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Led_Display_Controller_Test_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Led_Display_Controller_Test_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="Led_Display_Controller_Test_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Led_Display_Controller_Test_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Led_Display_Controller_Test_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Led_Display_Controller_Test_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Led_Display_Controller_Test_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Led_Display_Controller_Test_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Led_Display_Controller_Test_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Led_Display_Controller_Test_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Led_Display_Controller_Test_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Led_Display_Controller_Test_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Led_Display_Controller_Test_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Led_Display_Controller_Test_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Led_Display_Controller_Test_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Led_Display_Controller_Test_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Led_Display_Controller_Test_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Led_Display_Controller_Test_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="Led_Display_Controller_Test.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Led_Display_Controller_Test_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Led_Display_Controller_Test_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="Led_Display_Controller_Test.nky"/>
-  <File Type="BITSTR-BMM" Name="Led_Display_Controller_Test_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Led_Display_Controller_Test_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Led_Display_Controller_Test_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Led_Display_Controller_Test_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="Led_Display_Controller_Test.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="Led_Display_Controller_Test_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="Led_Display_Controller_Test_pld.pdi"/>
@@ -73,13 +66,6 @@
   <File Type="RNPI_FILE" Name="Led_Display_Controller_Test.rnpi"/>
   <File Type="NPI_FILE" Name="Led_Display_Controller_Test.npi"/>
   <File Type="RBD_FILE" Name="Led_Display_Controller_Test.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Led_Display_Controller_Test.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="Led_Display_Controller_Test.sysdef"/>
-  <File Type="BG-BGN" Name="Led_Display_Controller_Test.bgn"/>
-  <File Type="BG-DRC" Name="Led_Display_Controller_Test.drc"/>
-  <File Type="RDI-RDI" Name="Led_Display_Controller_Test.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="Led_Display_Controller_Test_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="Led_Display_Controller_Test_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -165,5 +151,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

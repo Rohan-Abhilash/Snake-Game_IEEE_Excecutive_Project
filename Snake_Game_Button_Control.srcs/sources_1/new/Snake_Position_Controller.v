@@ -1,11 +1,15 @@
-module Snake_Position_Controller(output [10:0] pos_x, pos_y, input [3:0] buttons, input clock, reset);
+module Snake_Position_Controller(output [99:0] pos_x, pos_y, input [3:0] buttons, input clock, reset,input [9:0]length);
 //buttons [3] = up ; buttons[2] = right; buttons[1] = down; buttons[0] = left; 
 reg signed [10:0] pos_x_temp, pos_y_temp;
-assign pos_x = pos_x_temp;
-assign pos_y = pos_y_temp;
 reg signed [10:0] vel_x, vel_y;
 reg signed [10:0] last_vel_x , last_vel_y;
+reg [89:0] pos_x_body,pos_y_body;
+reg [89:0]temp_1s = ~(90'b0);
 
+assign pos_x = {pos_x_body[89:0],pos_x_temp[9:0]};
+assign pos_y = {pos_y_body[89:0],pos_y_temp[9:0]};
+
+integer i;
 parameter [10:0] monitor_width_pixels = 640;
 parameter [10:0] monitor_height_pixels = 480;
 
@@ -36,7 +40,19 @@ always @(posedge clock or posedge reset) begin
         pos_y_temp = 240;
         last_vel_x = 0;
         last_vel_y = 0;
+        pos_x_body = 90'b0;
+        pos_y_body = 90'b0;
     end else begin
+        
+        //if(length > 0)begin
+            pos_x_body = pos_x_body << 10;
+            pos_y_body = pos_y_body << 10;
+            
+            pos_x_body[9:0] = pos_x_temp[9:0];
+            pos_y_body[9:0] = pos_y_temp[9:0];
+            
+            pos_x_body[89:0] = pos_x_body[89:0] & ~(temp_1s << length*10);
+        //end
         pos_x_temp = pos_x_temp + vel_x;
         pos_y_temp = pos_y_temp + vel_y;
         
