@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Oct  7 13:53:35 2024
-# Process ID: 8876
+# Start of session at: Sun Oct 27 23:31:59 2024
+# Process ID: 2864
 # Current directory: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1
 # Command line: vivado.exe -log Led_Display_Controller_Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Led_Display_Controller_Test.tcl
 # Log file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8362 MB
-# Swap memory       :12447 MB
-# Total Virtual     :20810 MB
-# Available Virtual :7270 MB
+# Swap memory       :15032 MB
+# Total Virtual     :23395 MB
+# Available Virtual :6273 MB
 #-----------------------------------------------------------
 source Led_Display_Controller_Test.tcl -notrace

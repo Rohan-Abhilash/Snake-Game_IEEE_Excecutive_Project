@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1728289413" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Button_Control.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730052116" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Button_Control.dcp">
   <File Type="PA-TCL" Name="Led_Display_Controller_Test.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Led_Display_Controller_Test_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Led_Display_Controller_Test_reports.tcl"/>
   <File Type="RDS-RDS" Name="Led_Display_Controller_Test.vds"/>
   <File Type="RDS-UTIL" Name="Led_Display_Controller_Test_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Led_Display_Controller_Test_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Led_Display_Controller_Test.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Led_Display_Controller_Test_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Led_Display_Controller_Test_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Clock_Divider_2.v">

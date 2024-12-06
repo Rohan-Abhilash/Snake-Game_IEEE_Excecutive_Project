@@ -27,7 +27,7 @@ module Led_Display_Controller_Test(
     input [3:0]buttons,input clock_100Mhz,reset
     );
 
-wire [99:0]pos_x,pos_y;
+wire [999:0]pos_x,pos_y;
 //reg [15:0]Led_out_temp;
 wire clock_1hz,clock_50Mhz,clock_25Mhz;
 reg [3:0] color_r,color_g,color_b;
@@ -37,6 +37,8 @@ parameter [19:0]rand_seed = 212701;
 reg apple_eaten;
 reg [9:0]length = 0;
 wire [9:0]head_x,head_y;
+wire clock_85Mhz;
+wire locked;
 assign head_x = pos_x[9:0];
 assign head_y = pos_y[9:0];
 assign clock_1s_led = clock_1hz;

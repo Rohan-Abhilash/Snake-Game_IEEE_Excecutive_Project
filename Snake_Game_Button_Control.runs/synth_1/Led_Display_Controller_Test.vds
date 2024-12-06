@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Oct  7 13:53:35 2024
-# Process ID: 8876
+# Start of session at: Sun Oct 27 23:31:59 2024
+# Process ID: 2864
 # Current directory: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1
 # Command line: vivado.exe -log Led_Display_Controller_Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Led_Display_Controller_Test.tcl
 # Log file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8362 MB
-# Swap memory       :12447 MB
-# Total Virtual     :20810 MB
-# Available Virtual :7270 MB
+# Swap memory       :15032 MB
+# Total Virtual     :23395 MB
+# Available Virtual :6273 MB
 #-----------------------------------------------------------
 source Led_Display_Controller_Test.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 515.539 ; gain = 203.387
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 514.762 ; gain = 198.859
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -36,9 +36,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5308
+INFO: [Synth 8-7075] Helper process launched with PID 16404
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1386.887 ; gain = 450.051
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1385.949 ; gain = 450.672
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Led_Display_Controller_Test' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Snake_Position_Controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
@@ -55,9 +55,9 @@ INFO: [Synth 8-6155] done synthesizing module 'Random_Generator' (0#1) [C:/Users
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'Led_Display_Controller_Test' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
-WARNING: [Synth 8-6014] Unused sequential element value_x_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:89]
-WARNING: [Synth 8-6014] Unused sequential element value_y_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:90]
-WARNING: [Synth 8-6014] Unused sequential element color_b_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:64]
+WARNING: [Synth 8-6014] Unused sequential element value_x_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:103]
+WARNING: [Synth 8-6014] Unused sequential element value_y_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:104]
+WARNING: [Synth 8-6014] Unused sequential element color_b_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:66]
 WARNING: [Synth 8-7129] Port length[9] in module vga_controller is either unconnected or has no load
 WARNING: [Synth 8-7129] Port length[8] in module vga_controller is either unconnected or has no load
 WARNING: [Synth 8-7129] Port length[7] in module vga_controller is either unconnected or has no load
@@ -101,18 +101,18 @@ WARNING: [Synth 8-7129] Port rand_seed[2] in module Random_Generator is either u
 WARNING: [Synth 8-7129] Port rand_seed[1] in module Random_Generator is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rand_seed[0] in module Random_Generator is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.238 ; gain = 561.402
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.137 ; gain = 583.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.238 ; gain = 561.402
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.137 ; gain = 583.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.238 ; gain = 561.402
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.137 ; gain = 583.859
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1498.238 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1519.137 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -219,47 +219,47 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Led_Display_Controller_Test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1532.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1620.410 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1532.160 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1620.410 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1532.160 ; gain = 595.324
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1620.410 ; gain = 685.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1532.160 ; gain = 595.324
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1620.410 ; gain = 685.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1532.160 ; gain = 595.324
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1620.410 ; gain = 685.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1532.160 ; gain = 595.324
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:37 . Memory (MB): peak = 1620.410 ; gain = 685.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 25    
-	   2 Input   11 Bit       Adders := 27    
+	   2 Input   32 Bit       Adders := 205   
+	   2 Input   11 Bit       Adders := 207   
 	   2 Input   10 Bit       Adders := 3     
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
-	               90 Bit    Registers := 2     
+	              990 Bit    Registers := 2     
 	               32 Bit    Registers := 1     
 	               20 Bit    Registers := 1     
 	               11 Bit    Registers := 4     
-	               10 Bit    Registers := 5     
+	               10 Bit    Registers := 3     
 	                9 Bit    Registers := 2     
 	                4 Bit    Registers := 5     
 	                2 Bit    Registers := 1     
@@ -286,55 +286,13 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP rand_temp0, operation Mode is: C+A*(B:0x13edd).
-DSP Report: operator rand_temp0 is absorbed into DSP rand_temp0.
-DSP Report: operator rand_temp0 is absorbed into DSP rand_temp0.
-WARNING: [Synth 8-7129] Port length[9] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[8] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[7] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[6] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[5] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[4] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[3] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[2] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[1] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port length[0] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_r[3] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_r[2] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_r[1] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_r[0] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_g[3] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_g[2] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_g[1] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_g[0] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_b[3] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_b[2] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_b[1] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port color_b[0] in module vga_controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[19] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[18] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[17] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[16] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[15] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[14] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[13] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[12] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[11] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[10] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[9] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[8] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[7] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[6] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[5] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[4] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[3] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[2] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[1] in module Random_Generator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rand_seed[0] in module Random_Generator is either unconnected or has no load
+DSP Report: Generating DSP random1/rand_temp0, operation Mode is: C+A*(B:0x13edd).
+DSP Report: operator random1/rand_temp0 is absorbed into DSP random1/rand_temp0.
+DSP Report: operator random1/rand_temp0 is absorbed into DSP random1/rand_temp0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1532.160 ; gain = 595.324
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1620.410 ; gain = 685.133
 ---------------------------------------------------------------------------------
- Sort Area is  rand_temp0_0 : 0 0 : 1323 1323 : Used 1 time 0
+ Sort Area is Led_Display_Controller_Test__GC0 random1/rand_temp0_0 : 0 0 : 1323 1323 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -354,19 +312,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1532.160 ; gain = 595.324
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:55 . Memory (MB): peak = 1620.410 ; gain = 685.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1532.160 ; gain = 595.324
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:55 . Memory (MB): peak = 1620.410 ; gain = 685.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1544.316 ; gain = 607.480
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:59 . Memory (MB): peak = 1646.562 ; gain = 711.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -384,37 +342,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:02:09 . Memory (MB): peak = 1660.754 ; gain = 725.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:02:09 . Memory (MB): peak = 1660.754 ; gain = 725.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:02:09 . Memory (MB): peak = 1660.754 ; gain = 725.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:02:09 . Memory (MB): peak = 1660.754 ; gain = 725.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.754 ; gain = 725.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.754 ; gain = 725.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -438,16 +396,16 @@ Report Cell Usage:
 +------+--------+------+
 |      |Cell    |Count |
 +------+--------+------+
-|1     |BUFG    |     2|
-|2     |CARRY4  |   170|
+|1     |BUFG    |     3|
+|2     |CARRY4  |  1250|
 |3     |DSP48E1 |     1|
-|4     |LUT1    |     3|
-|5     |LUT2    |    76|
-|6     |LUT3    |   134|
-|7     |LUT4    |   408|
-|8     |LUT5    |   389|
-|9     |LUT6    |   287|
-|10    |FDCE    |   262|
+|4     |LUT1    |    11|
+|5     |LUT2    |    92|
+|6     |LUT3    |   515|
+|7     |LUT4    |  2981|
+|8     |LUT5    |  4107|
+|9     |LUT6    |  1875|
+|10    |FDCE    |  2089|
 |11    |FDPE    |    14|
 |12    |FDRE    |    67|
 |13    |FDSE    |     7|
@@ -455,28 +413,29 @@ Report Cell Usage:
 |15    |OBUF    |    15|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.754 ; gain = 725.477
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1551.520 ; gain = 580.762
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1551.520 ; gain = 614.684
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:02:12 . Memory (MB): peak = 1660.754 ; gain = 624.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:02:16 . Memory (MB): peak = 1660.754 ; gain = 725.477
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1554.773 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 171 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.309 . Memory (MB): peak = 1660.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1251 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Led_Display_Controller_Test' is not ideal for floorplanning, since the cellview 'Snake_Position_Controller' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1554.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1660.754 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: b6b053ae
+Synth Design complete | Checksum: cce1d048
 INFO: [Common 17-83] Releasing license: Synthesis
-36 Infos, 121 Warnings, 32 Critical Warnings and 0 Errors encountered.
+36 Infos, 80 Warnings, 32 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1554.773 ; gain = 1034.992
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:02:38 . Memory (MB): peak = 1660.754 ; gain = 1142.211
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1554.773 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1660.754 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Led_Display_Controller_Test_utilization_synth.rpt -pb Led_Display_Controller_Test_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 13:54:25 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 27 23:34:57 2024...

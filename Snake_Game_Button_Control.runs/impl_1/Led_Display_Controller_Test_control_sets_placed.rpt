@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Mon Oct  7 13:55:04 2024
+| Date         : Sun Oct 27 23:36:22 2024
 | Host         : Rohan-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Led_Display_Controller_Test_control_sets_placed.rpt
 | Design       : Led_Display_Controller_Test
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    11 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    44 |
+| Unused register locations in slices containing registers |    41 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -44,10 +44,10 @@ Table of Contents
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     1 |
-| >= 10 to < 12      |     2 |
-| >= 12 to < 14      |     2 |
-| >= 14 to < 16      |     0 |
-| >= 16              |     5 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     6 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              30 |           12 |
-| No           | No                    | Yes                    |             214 |           80 |
-| No           | Yes                   | No                     |              44 |           13 |
+| No           | No                    | Yes                    |            2036 |          894 |
+| No           | Yes                   | No                     |              44 |           12 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              68 |           24 |
+| Yes          | No                    | Yes                    |              73 |           32 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,20 +70,20 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------+---------------------------------+------------------+------------------+----------------+--------------+
-|       Clock Signal      |          Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+-------------------------+---------------------------------+------------------+------------------+----------------+--------------+
-|  clock_100Mhz_IBUF_BUFG |                                 |                  |                2 |              4 |         2.00 |
-|  clock_3/CLK_BUFG       | snake_display/p_0_out[0]        | reset_IBUF       |                2 |              8 |         4.00 |
-|  clock_3/CLK_BUFG       | snake_display/v_counter         | reset_IBUF       |                3 |             10 |         3.33 |
-|  clock_1s_led_OBUF_BUFG | control1/E[0]                   | reset_IBUF       |                2 |             10 |         5.00 |
-|  clock_3/CLK_BUFG       |                                 | reset_IBUF       |                6 |             12 |         2.00 |
-| ~clock_1s_led_OBUF_BUFG |                                 | reset_IBUF       |                5 |             12 |         2.40 |
-|  clock_1s_led_OBUF_BUFG | apple_eaten                     | reset_IBUF       |                8 |             18 |         2.25 |
-|  clock_1s_led_OBUF_BUFG | control1/last_vel_x[10]_i_1_n_0 | reset_IBUF       |                9 |             22 |         2.44 |
-| ~clock_1s_led_OBUF_BUFG |                                 |                  |               10 |             26 |         2.60 |
-|  clock_100Mhz_IBUF_BUFG |                                 | reset_IBUF       |                8 |             32 |         4.00 |
-|  clock_1s_led_OBUF_BUFG |                                 | reset_IBUF       |               74 |            202 |         2.73 |
-+-------------------------+---------------------------------+------------------+------------------+----------------+--------------+
++-------------------------+------------------------------------+------------------+------------------+----------------+--------------+
+|       Clock Signal      |            Enable Signal           | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------+------------------------------------+------------------+------------------+----------------+--------------+
+|  clock_100Mhz_IBUF_BUFG |                                    |                  |                2 |              4 |         2.00 |
+|  clock_25Mhz_BUFG       | snake_display/p_0_in               | reset_IBUF       |                3 |              8 |         2.67 |
+|  clock_25Mhz_BUFG       | snake_display/v_counter[9]_i_1_n_0 | reset_IBUF       |                4 |             11 |         2.75 |
+| ~clock_1s_led_OBUF_BUFG |                                    | reset_IBUF       |                4 |             12 |         3.00 |
+|  clock_1s_led_OBUF_BUFG | control1/apple_eaten_reg_i_5_0     | reset_IBUF       |                4 |             14 |         3.50 |
+|  clock_1s_led_OBUF_BUFG | apple_eaten                        | reset_IBUF       |               10 |             18 |         1.80 |
+|  clock_1s_led_OBUF_BUFG | control1/last_vel_x[10]_i_1_n_0    | reset_IBUF       |               11 |             22 |         2.00 |
+| ~clock_1s_led_OBUF_BUFG |                                    |                  |               10 |             26 |         2.60 |
+|  clock_100Mhz_IBUF_BUFG |                                    | reset_IBUF       |                8 |             32 |         4.00 |
+|  clock_25Mhz_BUFG       |                                    | reset_IBUF       |               16 |             34 |         2.12 |
+|  clock_1s_led_OBUF_BUFG |                                    | reset_IBUF       |              878 |           2002 |         2.28 |
++-------------------------+------------------------------------+------------------+------------------+----------------+--------------+
 
 
