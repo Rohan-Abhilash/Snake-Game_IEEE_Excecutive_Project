@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Oct 11 15:17:58 2024
+# Process ID: 3788
+# Current directory: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14652 C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.xpr
+# Log file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/vivado.log
+# Journal file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control\vivado.jou
+# Running On        :Rohan-PC
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8362 MB
+# Swap memory       :10737 MB
+# Total Virtual     :19100 MB
+# Available Virtual :9714 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

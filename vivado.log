@@ -1,0 +1,1184 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Oct 11 15:17:58 2024
+# Process ID: 3788
+# Current directory: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14652 C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.xpr
+# Log file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/vivado.log
+# Journal file: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control\vivado.jou
+# Running On        :Rohan-PC
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8362 MB
+# Swap memory       :10737 MB
+# Total Virtual     :19100 MB
+# Available Virtual :9714 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1538.961 ; gain = 434.480
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.0
+  **** Build date : Mar  6 2024 at 20:50:54
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 09 2024-05:30:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1593.016 ; gain = 26.414
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744084A
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Led_Display_Controller_Test
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8444
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2485.664 ; gain = 437.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Led_Display_Controller_Test' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Snake_Position_Controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+WARNING: [Synth 8-11581] system task call 'monitor' not supported [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'Snake_Position_Controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_1s' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_1s' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_2' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_2' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_25Mhz' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_25Mhz' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Random_Generator' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Random_Generator' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Led_Display_Controller_Test' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+WARNING: [Synth 8-6014] Unused sequential element value_x_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:103]
+WARNING: [Synth 8-6014] Unused sequential element value_y_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:104]
+WARNING: [Synth 8-6014] Unused sequential element color_b_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:66]
+WARNING: [Synth 8-7129] Port length[9] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[8] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[7] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[6] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[5] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[4] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[19] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[18] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[17] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[16] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[15] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[14] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[13] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[12] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[11] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[10] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[9] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[8] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[7] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[6] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[5] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[4] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[3] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[2] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[1] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[0] in module Random_Generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2599.824 ; gain = 551.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2599.824 ; gain = 551.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2599.824 ; gain = 551.691
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2599.824 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2696.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2723.125 ; gain = 674.992
+21 Infos, 78 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2723.125 ; gain = 1069.578
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp with file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 11 15:21:52 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/runme.log
+[Fri Oct 11 15:21:52 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.0
+  **** Build date : Mar  6 2024 at 20:50:54
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 09 2024-05:30:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2725.566 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744084A
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp with file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 11 15:33:29 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/runme.log
+[Fri Oct 11 15:33:29 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2742.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 171 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2759.848 ; gain = 0.148
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3266.777 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3266.777 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 3266.777 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3266.777 ; gain = 0.000
+Reading routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 3266.777 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3266.777 ; gain = 528.258
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3280.945 ; gain = 14.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Led_Display_Controller_Test' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Snake_Position_Controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+WARNING: [Synth 8-11581] system task call 'monitor' not supported [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'Snake_Position_Controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_1s' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_1s' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_2' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_2' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_25Mhz' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_25Mhz' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Random_Generator' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Random_Generator' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Led_Display_Controller_Test' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+WARNING: [Synth 8-6014] Unused sequential element value_x_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:103]
+WARNING: [Synth 8-6014] Unused sequential element value_y_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:104]
+WARNING: [Synth 8-6014] Unused sequential element color_b_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:66]
+WARNING: [Synth 8-7129] Port length[9] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[8] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[7] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[6] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[5] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[4] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[19] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[18] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[17] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[16] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[15] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[14] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[13] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[12] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[11] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[10] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[9] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[8] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[7] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[6] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[5] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[4] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[3] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[2] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[1] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[0] in module Random_Generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3391.215 ; gain = 124.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3413.117 ; gain = 146.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3413.117 ; gain = 146.340
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3427.785 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3427.785 ; gain = 161.008
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp with file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 11 15:36:55 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/runme.log
+[Fri Oct 11 15:36:55 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+close_hw_manager
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3427.785 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Led_Display_Controller_Test' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Snake_Position_Controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+WARNING: [Synth 8-11581] system task call 'monitor' not supported [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'Snake_Position_Controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_1s' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_1s' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_2' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_2' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_25Mhz' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_25Mhz' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Random_Generator' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Random_Generator' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Led_Display_Controller_Test' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+WARNING: [Synth 8-6014] Unused sequential element value_x_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:103]
+WARNING: [Synth 8-6014] Unused sequential element value_y_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:104]
+WARNING: [Synth 8-6014] Unused sequential element color_b_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:66]
+WARNING: [Synth 8-7129] Port length[9] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[8] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[7] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[6] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[5] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[4] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[19] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[18] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[17] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[16] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[15] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[14] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[13] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[12] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[11] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[10] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[9] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[8] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[7] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[6] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[5] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[4] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[3] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[2] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[1] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[0] in module Random_Generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3427.785 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3427.785 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3427.785 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3427.785 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3427.785 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp with file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Oct 11 15:51:21 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/runme.log
+[Fri Oct 11 15:51:21 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.0
+  **** Build date : Mar  6 2024 at 20:50:54
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 09 2024-05:30:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3474.363 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744084A
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+close_hw_manager
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3519.891 ; gain = 30.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Led_Display_Controller_Test' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Snake_Position_Controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+WARNING: [Synth 8-11581] system task call 'monitor' not supported [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'Snake_Position_Controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Snake_Position_Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_1s' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_1s' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_2' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_2' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_25Mhz' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_25Mhz' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Clock_Divider_2.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Random_Generator' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Random_Generator' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Random_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Led_Display_Controller_Test' (0#1) [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:23]
+WARNING: [Synth 8-6014] Unused sequential element value_x_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:103]
+WARNING: [Synth 8-6014] Unused sequential element value_y_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/vga_controller.v:104]
+WARNING: [Synth 8-6014] Unused sequential element color_b_reg was removed.  [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/sources_1/new/Led_Display_Controller_Test.v:66]
+WARNING: [Synth 8-7129] Port length[9] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[8] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[7] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[6] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[5] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[4] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port length[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_r[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_g[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[3] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[2] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[1] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port color_b[0] in module vga_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[19] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[18] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[17] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[16] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[15] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[14] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[13] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[12] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[11] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[10] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[9] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[8] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[7] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[6] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[5] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[4] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[3] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[2] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[1] in module Random_Generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rand_seed[0] in module Random_Generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3539.867 ; gain = 50.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3555.883 ; gain = 66.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3555.883 ; gain = 66.426
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3570.898 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[0]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[1]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[2]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[3]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[15]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[14]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[13]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[12]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[11]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[10]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[9]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[8]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[7]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[6]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[5]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Led_out[4]'. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/constrs_1/new/buttons_led_map.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3570.898 ; gain = 81.441
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.srcs/utils_1/imports/synth_1/Button_Control.dcp with file C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/Led_Display_Controller_Test.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\vga_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Clock_Divider_2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Rohan Abhilash\Documents\Vivado Programs\Snake_Game_Button_Control\Snake_Game_Button_Control.srcs\sources_1\new\Led_Display_Controller_Test.v:]
+[Fri Oct 11 15:55:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/synth_1/runme.log
+[Fri Oct 11 15:55:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.0
+  **** Build date : Mar  6 2024 at 20:50:54
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 09 2024-05:30:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3570.898 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744084A
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Abhilash/Documents/Vivado Programs/Snake_Game_Button_Control/Snake_Game_Button_Control.runs/impl_1/Led_Display_Controller_Test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 15:57:52 2024...

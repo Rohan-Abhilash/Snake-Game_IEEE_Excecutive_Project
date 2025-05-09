@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1728112814" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Button_Control.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730052116" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Button_Control.dcp">
   <File Type="PA-TCL" Name="Led_Display_Controller_Test.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Led_Display_Controller_Test_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Led_Display_Controller_Test_reports.tcl"/>

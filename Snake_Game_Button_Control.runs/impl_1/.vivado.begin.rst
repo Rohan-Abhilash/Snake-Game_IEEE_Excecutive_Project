@@ -1,50 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="15208" HostCore="8" HostMemory="08362713088">
+    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="9760" HostCore="8" HostMemory="08362713088">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="9072" HostCore="8" HostMemory="08362713088">
+    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="8380" HostCore="8" HostMemory="08362713088">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="19956" HostCore="8" HostMemory="08362713088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="25124" HostCore="8" HostMemory="08362713088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="10308" HostCore="8" HostMemory="08362713088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="22324" HostCore="8" HostMemory="08362713088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="20712" HostCore="8" HostMemory="08362713088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="23112" HostCore="8" HostMemory="08362713088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="4196" HostCore="8" HostMemory="08362713088">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="17504" HostCore="8" HostMemory="08362713088">
+    <Process Command="vivado.bat" Owner="Rohan Abhilash" Host="ROHAN-PC" Pid="10260" HostCore="8" HostMemory="08362713088">
     </Process>
 </ProcessHandle>

@@ -32,8 +32,8 @@ always @(negedge clock_1hz)begin
         rand_temp = rand_temp * 212701;
     end 
     
-    pos_x_rand = rand_temp[19:10] & 10'd639;
-    pos_y_rand = rand_temp[9:0] & 10'd450;
+    pos_x_rand = rand_temp[19:10] % 10'd500;
+    pos_y_rand = rand_temp[9:0] % 10'd450;
 end
 
 endmodule
